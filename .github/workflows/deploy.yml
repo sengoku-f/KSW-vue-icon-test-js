@@ -42,8 +42,9 @@ jobs:
         uses: EndBug/version-check@v2
         id: check
         with:
-          static-checking: localIsNew
           diff-search: true
+          file-url: https://unpkg.com/ksw-vue-icon-test@latest/package.json
+          static-checking: localIsNew
 
       # check是我们在上一段中为check步骤提供的id
       - name: Version update detected
